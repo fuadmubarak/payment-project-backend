@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: portal
+
+  datasource:
+    url: jdbc:postgresql://ep-small-fire-a1qymnxg-pooler.ap-southeast-1.aws.neon.tech:5432/neondb?sslmode=require&channelBinding=require
+    username: neondb_owner
+    password: npg_oTs7cOVxpdb5
+    driver-class-name: org.postgresql.Driver
+
+    hikari:
+      maximum-pool-size: 5
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+
+server:
+  port: 8080
