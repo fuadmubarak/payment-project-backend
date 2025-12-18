@@ -30,9 +30,9 @@ public class User {
     @Column(name = "access_token")
     private String accessToken;
 
-    @Column(nullable = false)
-    @Builder.Default
-    private String role = "user_web_portal";
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "role_id", nullable = false)
+    private Role role;
 
     @Column(name = "created_at", updatable = false)
     @Builder.Default
