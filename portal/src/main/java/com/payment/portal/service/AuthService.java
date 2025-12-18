@@ -49,7 +49,7 @@ public class AuthService {
                 .password(PasswordUtil.hash(req.getPassword()))
                 .role(role)
                 .build();
-
+ 
         // 5️⃣ Save user (DB unique constraint still protects us)
         userRepository.save(user);
 

@@ -37,4 +37,4 @@ public class User {
     @Column(name = "created_at", updatable = false)
     @Builder.Default
     private Instant createdAt = Instant.now();
-}
+} 

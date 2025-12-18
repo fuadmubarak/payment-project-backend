@@ -10,7 +10,7 @@ public class hellocontroller {
     public String home() {
         return "Portal backend is running 🚀";
     }
-
+ 
     @GetMapping("/health")
     public String health() {
         return "OK";

@@ -13,7 +13,7 @@ import java.util.List;
 public class RoleController {
 
     private final RoleService roleService;
-
+ 
     @GetMapping
     public List<Role> getRoles() {
         return roleService.getAllRoles();
